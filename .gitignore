@@ -1,7 +1,21 @@
+# Virtual Environment
 venv/
+.venv/
+
+# Python cache
 __pycache__/
 *.pyc
-.cache/
+
+# Dataset (DO NOT PUSH RAW DATA)
+data/raw/
+data/processed/
+
+# Outputs
+outputs/
+
+# Environment files
 .env
-data/
-models/
+
+# OS files
+.DS_Store
+Thumbs.db
