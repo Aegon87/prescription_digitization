@@ -3,6 +3,7 @@ import cv2
 from src.preprocessing.grayscale import to_grayscale
 from src.preprocessing.noise_removal import remove_noise
 from src.preprocessing.binarization import adaptive_threshold
+from src.preprocessing.skew_correction import correct_skew
 
 def preprocess_image(image_path):
     """
@@ -16,5 +17,6 @@ def preprocess_image(image_path):
     gray = to_grayscale(image)
     denoised = remove_noise(gray)
     binary = adaptive_threshold(denoised)
+    corrected = correct_skew(binary)
 
-    return binary
+    return corrected
