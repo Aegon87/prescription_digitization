@@ -10,6 +10,6 @@ def adaptive_threshold(image):
         255,
         cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
         cv2.THRESH_BINARY,
-        11,
-        2
+        13,
+        7
     )
